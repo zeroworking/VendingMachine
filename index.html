@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+<!--   Inicio de Main -->
+  <main>
+    <div class="container">
+      <div class="brand">VENDING MACHINE CODERHOUSE</div>
+      <div class="subbrand">[ SE RECOMIENDA AJUSTAR ZOOM DEL NAVEGADOR AL 75% ]</div>
+      <div class="maquina">
+        <div id="contenedor-navidad" class="productos"></div>
+        <div class="visores">
+          
+          <div class="monedero-dinero"> 
+            <label class="titulo">DINERO</label> 
+            <input type="text" class="form-control fondo-input" id="inputAgregaDinero" placeholder="">
+            <div class="separador"></div>
+            <button type="button" id="botonAgregaDinero" class="btn btn-primary btn-xs">AGREGAR DINERO</button>
+          </div>
+
+          <div id="mensajeMonedero" class="monedero-mensaje monedero-mensaje-fondo" >          
+            <div class="negrita">CENTRO DE MENSAJES</div>
+            <div class="separador transparente"><hr></div>
+            <div class="transparente">Jugo de Manzana</div>
+            <div class="transparente">$500</div>
+            <div class="separador transparente"><hr></div>
+            <div class="negrita2 transparente">SALDO INSUFICIENTE</div>
+            <div class="negrita2 transparente">AGREGUE DINERO</div>
+          </div>
+          
+          <div class="monedero-saldo">
+            <label class="titulo">MONEDERO</label>
+            <input type="text" class="form-control fondo-input" id="saldoMonedero" placeholder="" disabled>    
+            <div class="separador"></div>        
+            <button id="botonDevolucion" class="btn btn-danger btn-xs">RETIRAR SALDO</button>         
+          </div>
+
+          <div class="monedero-ventas">
+            <label class="titulo">TOTAL VENTAS<br>sessionStorage</label>
+            <input type="text" class="form-control fondo-input" id="sessionStorage" placeholder="" disabled>        
+        </div>
+      </div>
+    </div>
+  </main>
+<!--   Fin de Main -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
